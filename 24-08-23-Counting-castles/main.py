@@ -36,8 +36,10 @@ class Solver():
 
         number_of_possible_heights = self.height**self.width
 
-        for height_sample in tqdm(product(*([base_iter] * (self.width - 1))), total=number_of_possible_heights):
+        for height_sample in tqdm(product(*([base_iter] * self.width)), total=number_of_possible_heights):
             if self.count_blocks(height_sample) % 2 == 1:
+                continue
+            if self.height not in height_sample:
                 continue
 
             number_of_castles += 1
