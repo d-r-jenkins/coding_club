@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=502
+
 import numpy as np
 from typing import Optional
 from itertools import product
