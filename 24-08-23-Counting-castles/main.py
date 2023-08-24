@@ -48,7 +48,7 @@ class Solver():
 
 
 if __name__ == '__main__':
-    solver = Solver(4, 2)
+    solver = Solver(6, 7)
     # solver = Solver(13, 10)
     # solver = Solver(10, 13)
 
